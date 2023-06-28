@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --bottom-padding: 15px 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitle {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+/* Header Section */
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero .container {
+    padding: 0;
+}
+
+/* Navs */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+    font-weight: 700;
+}
+
+.nav-footer {
+    font-weight: 500;
+    justify-content: flex-start;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav-link-cta {
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.nav-link-cta:hover {
+    transition: 0.3s ease;
+    transition-duration: 0.5s;
+    box-shadow: 1px -1px 24px -8px rgba(255, 255, 255, 1);
+}
+
+.nav-link-footer {
+    padding: 10px;
+}
+
+.hero-container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero-text {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.hero-cta {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: var(--bottom-padding);
+    margin: 10px 0;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero-cta:hover{
+    transition: 0.3s ease;
+    transition-duration: 0.5s;
+    box-shadow: 1px -1px 24px -8px rgba(255, 255, 255, 1);
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+/* Presentatio Section */
+.presentation {
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.presentation-copy {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.presentation-cta {
+    display: inline-block;
+    margin-top: 40px;
+    padding: var(--bottom-padding);
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #6d87fa, #5c71d3);
+    box-shadow:  5px 5px 10px #657de8,-5px -5px 10px #677fec;
+}
+
+.presentation-cta:hover{
+    transition: 0.3s ease;
+    transition-duration: 0.5s;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #6d87fa, #5c71d3);
+    box-shadow:  5px 5px 15px #657de8, -5px -5px 15px #677fec;
+}
+
+
+/* About Section */
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 30px;
+
+}
+
+.about-paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-img-left {
+    text-align: left;
+}
+
+.about-picture {
+    max-width: 80%;
+}
+
+
+/* Projects Section */
+.projects {
+    background: #667eea;
+    padding-top: 0;
+    /* position: relative; */
+}
+
+.subtitle-projects {
+    color: #fff;
+}
+
+/* .project-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+} */
+
+.projects-grid {
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
+
+.projects-items{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.projects-items:nth-of-type(1) {
+    grid-area: img1;
+}
+
+.projects-items:nth-of-type(2) {
+    grid-area: img2;
+}
+
+.projects-items:nth-of-type(3) {
+    grid-area: img3;
+}
+
+.projects-items:nth-of-type(4) {
+    grid-area: img4;
+}
+
+.projects-items:nth-of-type(5) {
+    grid-area: img5;
+}
+
+.projects-hover {
+    position: absolute;
+    background: #667eea60;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.projects-items:hover .projects-hover{
+    transform: translateX(0%);
+}
+
+.projects-icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+/* Testimony Section */
+.testimony-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.testimony-item {
+    width: 95%;
+    margin: 0 auto;
+    background: var(--color-primary);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.testimony-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimony-img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-right: 30px;
+}
+
+.testimony-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimony-verification {
+    color: #EAFAA0;
+    font-weight: 600;
+}
+
+.testimony-review {
+    font-weight: 300;
+}
+
+
+/* Footer Section */
+.footer {
+    background: var(--color-primary);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-title {
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container-icons {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .3s ease-in;
+}
+
+.footer-container-icons:hover{
+    color: #EAFAA0;
+}
+
+.footer-icon {
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fab.footer-icon {
+    line-height: 60px;
+}
+
+
+/* ----- Responsive Design ----- */
+
+@media screen and (max-width: 800px){
+    :root{
+        --bottom-padding: 13px 28px;
+    }
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    /* .nav-link-cta {
+        border: none;
+    } */
+
+    .hero-text {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+
+    /* About */
+    .presentation-copy {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about.container {
+        padding-top: 30px;
+    }
+
+    .about-img-left {
+        text-align: center;
+    }
+
+    .about-paragraph{
+        font-size: 1.2rem;
+    }
+    .about-text:last-child {
+        grid-row: 3/4;
+    }
+
+
+    /* My Projects */
+    .projects-grid {
+        grid-template-areas: 
+        "img1 img1 img2 img2"
+        "img1 img1 img3 img3"
+        "img4 img4 img5 img5";
+    }
+
+    /* Testimony */
+    .testimony-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .testimony-item {
+        padding-bottom: 10px;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-contact {
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --bottom-padding: 10px 20px;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+
+    /* About */
+    .presentation-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about {
+        row-gap: 60px;
+    }
+
+    .about.container {
+        padding-top: 10px;
+    }
+
+
+    /* My projects */
+    .projects-grid {
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        height: auto;
+        grid-template-rows: repeat(5, 250px);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+
+    /* Testimony */ 
+    .testimony-item {
+        padding: 30px 15px;
+    }
+
+    .testimony-person {
+        flex-direction: column;
+    }
+
+    .testimony-img {
+        margin: 0 auto;
+    }
+
+    .testimony-text {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+
+}
+
+
