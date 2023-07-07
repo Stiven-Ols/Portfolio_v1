@@ -192,6 +192,11 @@ body {
     font-size: 1.25rem;
 }
 
+.about-paragraph span {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
 .about-img {
     text-align: center;
 }
@@ -430,7 +435,12 @@ body {
     /* About */
     .presentation-copy {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.2rem
+    }
+
+    .presentation-copy span {
+        color: var(--color-primary);
+        font-weight: 600;
     }
 
     .about {
