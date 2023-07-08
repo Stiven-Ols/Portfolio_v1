@@ -438,11 +438,6 @@ body {
         font-size: 1.2rem
     }
 
-    .presentation-copy span {
-        color: var(--color-primary);
-        font-weight: 600;
-    }
-
     .about {
         grid-template-columns: 1fr;
     }
